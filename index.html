@@ -16,8 +16,175 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h2>TypeScript Overview</h2>
+						<aside class="notes">
+							TypeScript is an open-source, object-oriented language developed and maintained by Microsoft.
+							<br>TypeScript extends JavaScript by adding data types, classes, and other object-oriented features with type-checking.
+							<br>It is a typed superset of JavaScript that compiles to plain JavaScript.
+						</aside>
+					</section>
+					<section>
+						<p>
+							Official website: <a href="https://www.typescriptlang.org">https://www.typescriptlang.org</a>
+						</p>
+						<p>
+							Source code: <a href="https://github.com/Microsoft/TypeScript">https://github.com/Microsoft/TypeScript</a>
+						</p>
+						<aside class="notes">
+							TypeScript has an own official website and an open source code on GitHub.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>TypeScript History</h3>
+					</section>
+					<section>
+						<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+							<p><span style="color: #42affa;">Anders Hejlsberg</span> is a Danish software engineer, creator of Turbo Pascal, Delphi, C# and TypeScript</p>
+							<img src="./examples/assets/Photo.jpg" alt="photo" style="width: 200px;">
+						</div>
+						<aside class="notes">
+							TypeScript was developed by Danish software engineer Anders Hejlsberg, also known as the creator of such languages as Turbo Pascal, Delphi and C#.
+						</aside>
+					</section>
+					<section>
+						<p>TypeScript was released in October 2012</p>
+						<aside class="notes">
+							TypeScript was first released in October 2012.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Why TypeScript?</h3>
+						<aside class="notes">
+							So, why should we use TypeScript?
+						</aside>
+					</section>
+					<section>
+						<p>JavaScript is a dynamic programming language with <u>no type system</u></p>
+						<aside class="notes">
+							JavaScript is a dynamic programming language with no type system.
+							JavaScript provides primitive types like string, number, object, etc., but it doesn't check assigned values.
+							JavaScript variables can point to any value.
+							So, without the type system, it is not easy to use JavaScript to build complex applications with large teams working on the same code.
+						</aside>
+					</section>
+					<section>
+						<ul>
+							<li>The type system increases the code quality, readability</li>
+							<li class="fragment fade-in">Errors can be caught at compile</li>
+							<li class="fragment fade-in">TypeScript supports object-oriented programming features</li>
+						</ul>
+						<aside class="notes">
+							The type system increases the code quality, readability and makes it easy to maintain and refactor codebase.
+							<br>--More importantly, errors can be caught at compile time rather than at runtime.
+							<br>So, the reason to use TypeScript is that it catches errors at compile-time, so that you can fix it before you run code.
+							<br>--It supports object-oriented programming features like data types, classes, enums, etc., allowing JavaScript to be used at scale.
+						</aside>
+					</section>
+					<section>
+						<ul>
+							<li>TypeScript compiles into simple JavaScript</li>
+							<li class="fragment fade-in">The TypeScript compiler can be used with any browser or JavaScript engines</li>
+							<li class="fragment fade-in">Some of the most popular JavaScript frameworks are written in TypeScript</li>
+						</ul>
+						<aside class="notes">
+							TypeScript compiles into simple JavaScript.
+							<br>--The TypeScript compiler is also implemented in TypeScript and can be used with any browser or JavaScript engines like Node.js.
+							TypeScript needs an ECMAScript 3 or higher compatible environment to compile. This is a condition met by all major browsers and JavaScript engines today.
+							<br>--Some of the most popular JavaScript frameworks like Angular and Vue.js are written in TypeScript.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>How to use TypeScript?</h3>
+						<aside class="notes">
+							TypeScript code is written in a file with .ts extension and then compiled into JavaScript using the TypeScript compiler.
+						</aside>
+					</section>
+					<section>
+						<p>A TypeScript file can be written in any code editor</p>
+						<p>Many text editors and development environments have TypeScript support at the plugin level</p>
+						<aside class="notes">
+							A TypeScript file can be written in any code editor.
+							Many text editors and development environments, such as Visual Studio Code, Atom, Sublime, WebStorm, and others,
+							have TypeScript support at the plugin level, which allows you to take advantage of a number of benefits,
+							such as code highlighting or tooltip on types and constructs language.
+						</aside>
+					</section>
+					<section>
+						<p><span style="color: #42affa;"><code>npm install -g typescript</code></span></p>
+						<p><span style="color: #42affa;"><code>tsc &lt;filename&gt;.ts</code></span> compiles the TypeScript code into a plain JavaScript file</p>
+						<img src="./examples/assets/typescript-workflow.png" alt="">
+						<aside class="notes">
+							A TypeScript compiler needs to be installed on your platform. 
+							It can be installed using the npm package manager command that is used in Node.js:
+							<br>the command is - npm install -g typescript
+							<br>Once installed, the command tsc &lt;filename&gt;.ts compiles the TypeScript code into a plain JavaScript file.
+							JavaScript files can then be included in the HTML and run on any browser.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>TypeScript Features</h3>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment fade-in">Cross-Platform</li>
+							<li class="fragment fade-in">Object-Oriented Language</li>
+							<li class="fragment fade-in">Static type-checking</li>
+							<li class="fragment fade-in">Optional Static Typing</li>
+							<li class="fragment fade-in">DOM Manipulation</li>
+							<li class="fragment fade-in">ES 6 Features</li>
+						</ul>
+						<aside class="notes">
+							--Cross-Platform: TypeScript runs on any platform that JavaScript runs on.
+							The TypeScript compiler can be installed on any Operating System such as Windows, macOS, and Linux.
+							<br>--Object-Oriented Language: TypeScript provides powerful features such as Classes, Interfaces, and Modules.
+							You can write pure object-oriented code for client-side as well as server-side development.
+							<br>--Static type-checking: TypeScript uses static typing. This is done using type annotations.
+							It helps type checking at compile time. So, you can find errors while typing the code without running your script each time.
+							Also, if a variable is declared without a type, it will have a type based on its value.
+							<br>--Optional Static Typing: TypeScript static typing is optional, if you prefer to use JavaScript's dynamic typing.
+							<br>--DOM Manipulation: Like JavaScript, TypeScript can be used to manipulate the Document object model.
+							<br>--ES 6 Features: TypeScript includes most features of ECMAScript 2015 such as class, interface, Arrow functions etc.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>TypeScript Advantages</h3>
+					</section>
+					<section>
+						<p><span style="color: #42affa;">TypeScript</span>:</p>
+						<ul>
+							<li class="fragment fade-in">is an open-source language</li>
+							<li class="fragment fade-in">runs on any browser or JavaScript engine</li>
+							<li class="fragment fade-in">is similar to JavaScript and uses the same syntax and semantics</li>
+							<li class="fragment fade-in">is closer in syntax to backend languages</li>
+							<li class="fragment fade-in">can be called from an existing JavaScript code</li>
+						</ul>
+						<aside class="notes">
+							--TypeScript is an open-source language with continuous development and maintenance by Microsoft.
+							<br>--TypeScript runs on any browser or JavaScript engine.
+							<br>--TypeScript is similar to JavaScript and uses the same syntax and semantics.
+							All of TypeScript's code finally gets converted into JavaScript.
+							That's why front-end developers who currently write code in JavaScript can quickly learn this language.
+							<br>--TypeScript is also closer in syntax to backend languages like Java and Scala. This helps backend developers write front-end code faster.
+							<br>--TypeScript code can be called from an existing JavaScript code.
+							TypeScript also works with existing JavaScript frameworks and libraries without any issues.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h3><span style="color: #42affa;">Thank you for your attention!</span></h3>
+				</section>
 			</div>
 		</div>
 
